@@ -1,0 +1,11 @@
+applications:
+- name: ah-poc-grafana
+  buildpacks:
+  - binary_buildpack
+  command: ./bin/grafana-server web
+  disk_quota: 1G
+  instances: 1
+  memory: 64M
+  routes:
+  - route: ah-poc-grafana.cfapps.io
+  stack: cflinuxfs3
