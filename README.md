@@ -1,5 +1,7 @@
 # ah-poc-grafana
 
+[![Build Status](https://travis-ci.com/zuhlke/ah-poc-grafana.svg?branch=master)](https://travis-ci.com/zuhlke/ah-poc-grafana)
+
 ## Run locally
 
 Execute following command to run Grafana on port `8080`
