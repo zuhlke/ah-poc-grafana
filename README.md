@@ -10,14 +10,17 @@ Execute following command to run Grafana on port `8080`
 
 `cf push`
 
-## Importing the dashboard
+## Setup
 
-When you're in the GUI, to import the dashboard created by Jason from a public template, go to the left side 
-of the GUI:
+Our default datasource and dashboard are configured automatically. These are loaded on startup.
 
-1. Big '+' button
-2. Import
-3. Upload json file
-4. Choose the file ah-poc-grafana-configuration.json which is in `conf/provisioning/dashboards/json-dashboards` from this repo.
-5. Save with the default settings
-6. Tada!
+Grafana is configured by files in the `conf/` folder. The top-level config is `defaults.ini`. As the name suggests, this is the default config.
+
+The provisioning directory contains the datasource and dashboards config files. The provisioning directory
+is defined within `defaults.ini`, and is `conf/provisioning/`.
+
+In the `datasources/` and `dashboards/` subfolders, yaml files configure the respective components of Grafana.
+
+## Updating the configuration
+
+If you update the configuration in this repo and then repush the app to PCF, then Grafana will restart, and pick up the configuration changes.
