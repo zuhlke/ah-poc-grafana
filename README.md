@@ -1,7 +1,5 @@
 # ah-poc-grafana
 
-[![Build Status](https://travis-ci.com/zuhlke/ah-poc-grafana.svg?branch=master)](https://travis-ci.com/zuhlke/ah-poc-grafana)
-
 ## Run locally
 
 Execute following command to run Grafana on port `8080`
@@ -26,3 +24,5 @@ In the `datasources/` and `dashboards/` subfolders, yaml files configure the res
 ## Updating the configuration
 
 If you update the configuration in this repo and then repush the app to PCF, then Grafana will restart, and pick up the configuration changes.
+
+#### There is no pipeline, deploy from your machine using `cf push`.
