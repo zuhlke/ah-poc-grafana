@@ -8,7 +8,7 @@ Execute following command to run Grafana on port `8080`
 
 ## Deploy To PCF
 
-`cf push ah-poc-grafana -f manifest.yml`
+`cf push`
 
 ## Importing the dashboard
 
@@ -18,6 +18,6 @@ of the GUI:
 1. Big '+' button
 2. Import
 3. Upload json file
-4. Choose the file ah-poc-grafana-configuration.json which is in `conf/provisioning/dashboards/` from this repo.
+4. Choose the file ah-poc-grafana-configuration.json which is in `conf/provisioning/dashboards/json-dashboards` from this repo.
 5. Save with the default settings
 6. Tada!
