@@ -18,6 +18,6 @@ of the GUI:
 1. Big '+' button
 2. Import
 3. Upload json file
-4. Choose the file ah-poc-grafana-configuration.json which is in the top level of this repository.
+4. Choose the file ah-poc-grafana-configuration.json which is in `conf/provisioning/dashboards/` from this repo.
 5. Save with the default settings
 6. Tada!
