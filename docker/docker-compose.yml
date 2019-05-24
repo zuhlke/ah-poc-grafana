@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    volumes:
+      - ./gfdata:/var/lib/grafana
+    ports:
+      - 3000:3000
