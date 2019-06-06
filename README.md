@@ -10,7 +10,7 @@ Execute following command to run Grafana on port `8080`
 
 ## Deploy To PCF
 
-`cf push`
+Automatically deployed via Travis on each commit or manually by`cf push`
 
 ## Setup
 
@@ -25,6 +25,4 @@ In the `datasources/` and `dashboards/` subfolders, yaml files configure the res
 
 ## Updating the configuration
 
-If you update the configuration in this repo and then repush the app to PCF, then Grafana will restart, and pick up the configuration changes.
-
-#### There is no pipeline, deploy from your machine using `cf push`.
+If you update the configuration in this repo and then push your changes to GitHub, Travis will redeploy the app and Grafana will restart and pick up the configuration changes.
