@@ -1,3 +1,5 @@
+language: minimal
+
 deploy:
   provider: cloudfoundry
   username: $PCF_USERNAME
