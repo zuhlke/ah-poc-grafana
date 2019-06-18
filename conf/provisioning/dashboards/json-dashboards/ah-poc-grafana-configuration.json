@@ -30,7 +30,7 @@
   "editable": true,
   "gnetId": 4701,
   "graphTooltip": 1,
-  "iteration": 1559816857363,
+  "iteration": 1560851172445,
   "links": [],
   "panels": [
     {
@@ -78,7 +78,7 @@
           "displayAliasType": "Warning / Critical",
           "displayType": "Regular",
           "displayValueWithAlias": "Never",
-          "expr": "health",
+          "expr": "health{app_name=\"$application\", cf_instance_number=\"$instance\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -2333,7 +2333,7 @@
         "x": 8,
         "y": 39
       },
-      "id": 134,
+      "id": 140,
       "legend": {
         "alignAsTable": false,
         "avg": false,
@@ -2355,7 +2355,7 @@
       "points": false,
       "renderer": "flot",
       "repeat": null,
-      "repeatIteration": 1559816857363,
+      "repeatIteration": 1560851172445,
       "repeatPanelId": 3,
       "scopedVars": {
         "jvm_memory_pool_heap": {
@@ -2474,7 +2474,7 @@
         "x": 16,
         "y": 39
       },
-      "id": 135,
+      "id": 141,
       "legend": {
         "alignAsTable": false,
         "avg": false,
@@ -2496,7 +2496,7 @@
       "points": false,
       "renderer": "flot",
       "repeat": null,
-      "repeatIteration": 1559816857363,
+      "repeatIteration": 1560851172445,
       "repeatPanelId": 3,
       "scopedVars": {
         "jvm_memory_pool_heap": {
@@ -2768,7 +2768,7 @@
         "x": 8,
         "y": 47
       },
-      "id": 136,
+      "id": 142,
       "legend": {
         "alignAsTable": false,
         "avg": false,
@@ -2790,7 +2790,7 @@
       "points": false,
       "renderer": "flot",
       "repeat": null,
-      "repeatIteration": 1559816857363,
+      "repeatIteration": 1560851172445,
       "repeatPanelId": 78,
       "scopedVars": {
         "jvm_memory_pool_nonheap": {
@@ -2909,7 +2909,7 @@
         "x": 16,
         "y": 47
       },
-      "id": 137,
+      "id": 143,
       "legend": {
         "alignAsTable": false,
         "avg": false,
@@ -2931,7 +2931,7 @@
       "points": false,
       "renderer": "flot",
       "repeat": null,
-      "repeatIteration": 1559816857363,
+      "repeatIteration": 1560851172445,
       "repeatPanelId": 78,
       "scopedVars": {
         "jvm_memory_pool_nonheap": {
@@ -3993,7 +3993,7 @@
       }
     }
   ],
-  "refresh": "30s",
+  "refresh": "5s",
   "schemaVersion": 18,
   "style": "dark",
   "tags": [],
@@ -4108,7 +4108,7 @@
     ]
   },
   "time": {
-    "from": "now-30m",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {
